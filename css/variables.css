@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Nova Verse Academy — Design Tokens
+   Theme switching: set data-theme="premium" on <html> for the alt theme.
+   ========================================================================== */
+
+:root {
+  /* ---- Colors: Deep Space (default) ---- */
+  --bg-primary: #070B1A;
+  --bg-secondary: #0B1026;
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --bg-card-hover: rgba(255, 255, 255, 0.08);
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #CBD5E1;
+  --text-muted: #8891AC;
+
+  --primary: #6C63FF;
+  --primary-dim: #514AC2;
+  --secondary: #00D4FF;
+  --accent: #FFD166;
+
+  --border-color: rgba(255, 255, 255, 0.1);
+  --shadow-color: rgba(108, 99, 255, 0.25);
+  --glow-color: rgba(0, 212, 255, 0.25);
+
+  --gradient-primary: linear-gradient(135deg, var(--primary), var(--secondary));
+  --gradient-nebula: radial-gradient(60% 60% at 20% 20%, rgba(108,99,255,0.35), transparent 60%),
+                      radial-gradient(50% 50% at 85% 15%, rgba(0,212,255,0.25), transparent 60%),
+                      radial-gradient(70% 70% at 50% 100%, rgba(255,209,102,0.08), transparent 60%);
+
+  /* ---- Layout & Spacing ---- */
+  --container-width: 1240px;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 9rem;
+
+  /* ---- Radius ---- */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-full: 999px;
+
+  /* ---- Typography ---- */
+  --font-primary: 'Cairo', 'Segoe UI', sans-serif;
+  --fs-hero: clamp(2.4rem, 5.2vw, 4.4rem);
+  --fs-h1: clamp(2rem, 3.6vw, 3rem);
+  --fs-h2: clamp(1.6rem, 2.6vw, 2.25rem);
+  --fs-h3: clamp(1.2rem, 1.6vw, 1.5rem);
+  --fs-body: clamp(1rem, 1.05vw, 1.125rem);
+  --fs-small: 0.9rem;
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.2s var(--ease-out);
+  --transition-base: 0.4s var(--ease-out);
+  --transition-slow: 0.8s var(--ease-out);
+
+  /* ---- Shadows ---- */
+  --shadow-card: 0 20px 60px -20px rgba(0, 0, 0, 0.6);
+  --shadow-glow-primary: 0 0 40px var(--shadow-color);
+  --shadow-glow-secondary: 0 0 40px var(--glow-color);
+
+  --header-height: 84px;
+}
+
+/* ---- Colors: Premium Cosmic (alternative) ---- */
+[data-theme="premium"] {
+  --bg-primary: #070B1A;
+  --bg-secondary: #151A3A;
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --bg-card-hover: rgba(255, 255, 255, 0.09);
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #D1D5DB;
+  --text-muted: #9AA0B8;
+
+  --primary: #8B5CF6;
+  --primary-dim: #6D46D9;
+  --secondary: #38BDF8;
+  --accent: #FBBF24;
+
+  --border-color: rgba(255, 255, 255, 0.1);
+  --shadow-color: rgba(139, 92, 246, 0.25);
+  --glow-color: rgba(56, 189, 248, 0.25);
+
+  --gradient-primary: linear-gradient(135deg, var(--primary), var(--secondary));
+  --gradient-nebula: radial-gradient(60% 60% at 20% 20%, rgba(139,92,246,0.35), transparent 60%),
+                      radial-gradient(50% 50% at 85% 15%, rgba(56,189,248,0.25), transparent 60%),
+                      radial-gradient(70% 70% at 50% 100%, rgba(251,191,36,0.08), transparent 60%);
+}
