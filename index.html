@@ -1,366 +1,492 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nova Verse Academy | أكاديمية برمجة أونلاين للأطفال</title>
-<meta name="description" content="Nova Verse Academy أكاديمية برمجة أونلاين متخصصة في تعليم الأطفال البرمجة والذكاء الاصطناعي عبر حصص تفاعلية مباشرة. احجز حصة تجريبية مجانية اليوم.">
-<meta name="theme-color" content="#070B1A">
-<link rel="icon" type="image/svg+xml" href="assets/images/logo-mark.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Verse Academy | أكاديمية برمجة أونلاين للأطفال</title>
+  <meta name="description"
+    content="Nova Verse Academy أكاديمية برمجة أونلاين متخصصة في تعليم الأطفال البرمجة والذكاء الاصطناعي عبر حصص تفاعلية مباشرة. احجز حصة تجريبية مجانية اليوم.">
+  <meta name="theme-color" content="#070B1A">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-mark.svg">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Nova Verse Academy | Explore. Code. Create.">
-<meta property="og:description" content="تعلم البرمجة والذكاء الاصطناعي من خلال حصص أونلاين تفاعلية مصممة للأطفال.">
-<meta property="og:type" content="website">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nova Verse Academy | Explore. Code. Create.">
+  <meta property="og:description" content="تعلم البرمجة والذكاء الاصطناعي من خلال حصص أونلاين تفاعلية مصممة للأطفال.">
+  <meta property="og:type" content="website">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-<link rel="stylesheet" href="css/variables.css">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="css/components.css">
-<link rel="stylesheet" href="css/sections.css">
-<link rel="stylesheet" href="css/animations.css">
-<link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
 
-<a href="#main-content" class="skip-link">تخطي إلى المحتوى</a>
+  <a href="#main-content" class="skip-link">تخطي إلى المحتوى</a>
 
-<canvas class="starfield" aria-hidden="true"></canvas>
-<div class="nebula-backdrop" aria-hidden="true"></div>
+  <canvas class="starfield" aria-hidden="true"></canvas>
+  <div class="nebula-backdrop" aria-hidden="true"></div>
 
-<!-- ==================== HEADER ==================== -->
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a href="index.html" class="logo" aria-label="Nova Verse Academy — الصفحة الرئيسية">
-      <img src="assets/images/logo-mark.svg" alt="" class="logo__mark" width="42" height="42">
-      <span class="logo__text">NOVA VERSE<span>ACADEMY</span></span>
-    </a>
-
-    <nav class="nav-links" id="nav-links" aria-label="التنقل الرئيسي">
-      <a href="index.html">الرئيسية</a>
-      <a href="about.html">من نحن</a>
-      <a href="index.html#courses">البرامج التعليمية</a>
-      <a href="become-instructor.html">انضم كمدرب</a>
-      <a href="contact.html">تواصل معنا</a>
-    </nav>
-
-    <div class="nav-actions">
-      <button class="theme-toggle" type="button" aria-label="تبديل نمط الألوان">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/><circle cx="12" cy="12" r="4.5"/></svg>
-      </button>
-      <a href="#trial" class="btn btn-primary btn-sm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M8 2v4M16 2v4M3 10h18"/><path d="m9 15 2 2 4-4"/></svg><span class="btn-full-label">احجز حصة مجانية</span></a>
-      <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-links">
-        <span></span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<main id="main-content">
-
-  <!-- ==================== HERO ==================== -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <p class="eyebrow">أكاديمية برمجة أونلاين للأطفال</p>
-        <h1 class="hero-title">مستقبل طفلك <span class="text-gradient">يبدأ من هنا</span></h1>
-        <p class="hero-sub">تعلم البرمجة والذكاء الاصطناعي من خلال حصص أونلاين تفاعلية مصممة للأطفال، بإشراف مدربين متخصصين ومتابعة مستمرة لمستوى كل طفل.</p>
-        <div class="hero-actions">
-          <a href="#trial" class="btn btn-primary">احجز الحصة المجانية</a>
-          <a href="#" data-whatsapp class="btn btn-whatsapp">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.13L2 22l5.13-1.51a9.87 9.87 0 0 0 4.9 1.31h.01c5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.9-9.91-9.9zm0 18.03h-.01a8.17 8.17 0 0 1-4.17-1.14l-.3-.18-3.05.9.9-2.98-.19-.31a8.09 8.09 0 0 1-1.25-4.4c0-4.5 3.66-8.16 8.16-8.16 2.18 0 4.22.85 5.77 2.4a8.1 8.1 0 0 1 2.39 5.77c0 4.5-3.7 8.1-8.25 8.1zm4.47-6.11c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.78.95-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.35-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31s-.86.84-.86 2.04.88 2.37 1 2.53c.12.16 1.74 2.65 4.21 3.72.59.25 1.05.4 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.44-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/></svg>
-            تواصل عبر واتساب
-          </a>
-        </div>
-        <div class="hero-stats">
-          <div class="hero-stat"><strong>+500</strong><span>طالب مسجل</span></div>
-          <div class="hero-stat"><strong>4</strong><span>مسارات تعليمية</span></div>
-          <div class="hero-stat"><strong>1:1 &amp; مجموعات</strong><span>أنماط تعلم مرنة</span></div>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="hero-orbit-ring" aria-hidden="true"></div>
-        <img src="assets/images/hero-illustration.svg" alt="طفل يستخدم حاسوبًا محمولًا مع شفرة برمجية عائمة وكواكب" class="hero-illustration" width="520" height="520">
-      </div>
-    </div>
-
-    <div class="scroll-cue" aria-hidden="true">
-      <span>مرر للأسفل</span>
-      <span class="mouse"></span>
-    </div>
-  </section>
-
-  <!-- ==================== TRUST ==================== -->
-  <section class="section" id="trust">
-    <div class="container section-inner">
-      <div class="section-head reveal">
-        <p class="eyebrow">لماذا Nova Verse؟</p>
-        <h2 class="section-title">لماذا يختار الآباء <span class="text-gradient">Nova Verse Academy</span>؟</h2>
-        <p class="section-desc">نجمع بين خبرة تعليمية حقيقية وتجربة رقمية مصممة خصيصًا لتناسب احتياجات كل طفل.</p>
-      </div>
-
-      <div class="trust-grid reveal-stagger">
-        <article class="card trust-card">
-          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8Z"/></svg></div>
-          <h3>تعليم تفاعلي</h3>
-          <p>حصص مباشرة قائمة على المشاركة الفعلية، لا مجرد مشاهدة سلبية للشرح.</p>
-        </article>
-        <article class="card trust-card">
-          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/><path d="m15 8 2 2 3-3"/></svg></div>
-          <h3>مدربون متخصصون</h3>
-          <p>فريق تدريب مؤهل في البرمجة والتعامل مع الأطفال بأسلوب محفّز وصبور.</p>
-        </article>
-        <article class="card trust-card">
-          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3 2.5-5 5-5s5 2 5 5"/><path d="M14.5 20c.3-2.2 1.8-3.8 3.5-4"/></svg></div>
-          <h3>مجموعات صغيرة</h3>
-          <p>عدد محدود من الطلاب في كل مجموعة لضمان اهتمام حقيقي بكل طفل.</p>
-        </article>
-        <article class="card trust-card">
-          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17V9M9 17V5M15 17v-7M21 17V3"/></svg></div>
-          <h3>متابعة مستمرة</h3>
-          <p>تقارير دورية لأولياء الأمور حول تقدم الطفل ومستوى إتقانه للمهارات.</p>
-        </article>
-        <article class="card trust-card">
-          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg></div>
-          <h3>تعلم بالمشاريع</h3>
-          <p>كل مسار ينتهي بمشروع حقيقي يبنيه الطفل بنفسه ويفخر بعرضه.</p>
-        </article>
-        <article class="card trust-card">
-          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 3 1.5 3L10 7.5 6.5 9 5 12 3.5 9 0 7.5 3.5 6 5 3Z" transform="translate(3 3)"/><path d="M19 13v6M16 16h6"/></svg></div>
-          <h3>حصة مجانية للتجربة</h3>
-          <p>جرّب قبل الاشتراك — حصة تعريفية مجانية لتقييم مدى ملاءمة المسار لطفلك.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== COURSES ==================== -->
-  <section class="section" id="courses">
-    <div class="container section-inner">
-      <div class="section-head reveal">
-        <p class="eyebrow">المسارات التعليمية</p>
-        <h2 class="section-title">برامجنا <span class="text-gradient">التعليمية</span></h2>
-        <p class="section-desc">أربعة مسارات تعليمية متكاملة، مدة كل برنامج سنة دراسية واحدة، بدون أي شروط عمرية — مناسب لكل طفل يريد أن يبدأ.</p>
-      </div>
-
-      <div class="courses-grid reveal-stagger">
-        <article class="card course-card">
-          <div class="course-card__top">
-            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><circle cx="9" cy="10" r="1.2" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="1.2" fill="currentColor" stroke="none"/></svg></div>
-            <span class="duration-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>سنة دراسية واحدة</span>
-          </div>
-          <h3>Scratch</h3>
-          <p>تعلم أساسيات البرمجة والمنطق بطريقة ممتعة وتفاعلية.</p>
-          <a href="#trial" class="btn btn-secondary btn-sm">احجز حصة تجريبية</a>
-        </article>
-
-        <article class="card course-card">
-          <div class="course-card__top">
-            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M13 6l-2 12"/></svg></div>
-            <span class="duration-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>سنة دراسية واحدة</span>
-          </div>
-          <h3>Python</h3>
-          <p>تعلم البرمجة الحقيقية وبناء المشاريع.</p>
-          <a href="#trial" class="btn btn-secondary btn-sm">احجز حصة تجريبية</a>
-        </article>
-
-        <article class="card course-card">
-          <div class="course-card__top">
-            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2 2M17.5 17.5l2 2M19.5 4.5l-2 2M6.5 17.5l-2 2"/></svg></div>
-            <span class="duration-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>سنة دراسية واحدة</span>
-          </div>
-          <h3>Artificial Intelligence</h3>
-          <p>مقدمة في الذكاء الاصطناعي وتطبيقاته العملية.</p>
-          <a href="#trial" class="btn btn-secondary btn-sm">احجز حصة تجريبية</a>
-        </article>
-
-        <article class="card course-card">
-          <div class="course-card__top">
-            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 6v12h16V6M4 6l8 6 8-6"/></svg></div>
-            <span class="duration-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>سنة دراسية واحدة</span>
-          </div>
-          <h3>Web Development</h3>
-          <p>تعلم بناء مواقع الويب من الصفر باستخدام HTML وCSS وJavaScript.</p>
-          <a href="#trial" class="btn btn-secondary btn-sm">احجز حصة تجريبية</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== LEARNING JOURNEY ==================== -->
-  <section class="section" id="journey">
-    <div class="container section-inner">
-      <div class="section-head reveal">
-        <p class="eyebrow">خطوة بخطوة</p>
-        <h2 class="section-title">كيف تبدأ <span class="text-gradient">رحلة التعلم؟</span></h2>
-      </div>
-
-      <div class="timeline reveal-stagger">
-        <div class="timeline-connector" aria-hidden="true">
-          <svg viewBox="0 0 1000 40" preserveAspectRatio="none"><path d="M0 20 Q 250 0 500 20 T 1000 20" fill="none" stroke="rgba(255,255,255,0.12)" stroke-dasharray="3 8"/></svg>
-        </div>
-        <div class="timeline-step">
-          <div class="timeline-number">1</div>
-          <h3>احجز حصة مجانية</h3>
-          <p>حدد الموعد المناسب لك عبر واتساب خلال دقائق.</p>
-        </div>
-        <div class="timeline-step">
-          <div class="timeline-number">2</div>
-          <h3>تعرف على المدرب</h3>
-          <p>جلسة تعارف قصيرة لفهم مستوى واهتمامات طفلك.</p>
-        </div>
-        <div class="timeline-step">
-          <div class="timeline-number">3</div>
-          <h3>ابدأ التعلم</h3>
-          <p>ينطلق طفلك في مساره التعليمي بخطى مدروسة ومتدرجة.</p>
-        </div>
-        <div class="timeline-step">
-          <div class="timeline-number">4</div>
-          <h3>اكتسب مهارات حقيقية</h3>
-          <p>مشاريع فعلية ومهارات برمجية يستخدمها طفلك بثقة.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== TEACHING MODES ==================== -->
-  <section class="section" id="modes">
-    <div class="container section-inner">
-      <div class="section-head reveal">
-        <p class="eyebrow">مرونة في التعلم</p>
-        <h2 class="section-title">طرق <span class="text-gradient">التعلم</span></h2>
-      </div>
-
-      <div class="modes-grid reveal-stagger">
-        <article class="card mode-card">
-          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3 2.5-5 5-5s5 2 5 5"/><path d="M14.5 20c.3-2.2 1.8-3.8 3.5-4"/></svg></div>
-          <h3>حصص جماعية <span class="pill">Group Classes</span></h3>
-          <p>تعلم ضمن مجموعة صغيرة من الأطفال في نفس العمر، مع أجواء تحفيزية وتفاعل اجتماعي.</p>
-          <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m5 12 5 5L20 7"/></svg> تفاعل مع أقران في نفس المستوى</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m5 12 5 5L20 7"/></svg> أجواء تنافسية محفزة</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m5 12 5 5L20 7"/></svg> تكلفة أنسب للأسرة</li>
-          </ul>
-        </article>
-
-        <article class="card mode-card">
-          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-          <h3>حصص فردية <span class="pill">1-on-1</span></h3>
-          <p>خطة تعليمية مخصصة بالكامل لطفلك مع تركيز فردي كامل من المدرب.</p>
-          <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m5 12 5 5L20 7"/></svg> اهتمام فردي كامل</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m5 12 5 5L20 7"/></svg> وتيرة تعلم مرنة حسب الطفل</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m5 12 5 5L20 7"/></svg> مواعيد أكثر مرونة</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== FREE TRIAL ==================== -->
-  <section class="section" id="trial">
-    <div class="container">
-      <div class="trial-section reveal">
-        <div class="trial-content">
-          <p class="eyebrow">جربها الآن</p>
-          <h2>احجز أول حصة مجانية <span class="text-gradient">لطفلك</span></h2>
-          <p>دع طفلك يجرب تجربة تعليمية ممتعة قبل الاشتراك، بدون أي التزام.</p>
-          <a href="#" data-whatsapp data-whatsapp-message="مرحبًا، أرغب في حجز حصة تجريبية مجانية لطفلي." class="btn btn-primary">ابدأ الآن</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== TESTIMONIALS ==================== -->
-  <section class="section" id="testimonials">
-    <div class="container section-inner">
-      <div class="section-head reveal">
-        <p class="eyebrow">أصوات عملائنا</p>
-        <h2 class="section-title">آراء <span class="text-gradient">أولياء الأمور</span></h2>
-      </div>
-      <div class="testimonial-placeholder reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 8h4v5c0 2-1.5 3.5-3.5 4M13 8h4v5c0 2-1.5 3.5-3.5 4"/></svg>
-        <p>سيتم إضافة آراء أولياء الأمور قريبًا.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== PRICING CTA ==================== -->
-  <section class="section" id="pricing">
-    <div class="container section-inner pricing-cta reveal">
-      <h2 class="section-title">هل تحتاج تفاصيل عن <span class="text-gradient">الأسعار؟</span></h2>
-      <p>تواصل معنا لمعرفة البرامج التعليمية المناسبة لطفلك.</p>
-      <a href="#" data-whatsapp data-whatsapp-message="مرحبًا، أرغب في معرفة تفاصيل البرامج والأسعار المناسبة لطفلي." class="btn btn-whatsapp">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.13L2 22l5.13-1.51a9.87 9.87 0 0 0 4.9 1.31h.01c5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.9-9.91-9.9zm0 18.03h-.01a8.17 8.17 0 0 1-4.17-1.14l-.3-.18-3.05.9.9-2.98-.19-.31a8.09 8.09 0 0 1-1.25-4.4c0-4.5 3.66-8.16 8.16-8.16 2.18 0 4.22.85 5.77 2.4a8.1 8.1 0 0 1 2.39 5.77c0 4.5-3.7 8.1-8.25 8.1zm4.47-6.11c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.78.95-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.35-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31s-.86.84-.86 2.04.88 2.37 1 2.53c.12.16 1.74 2.65 4.21 3.72.59.25 1.05.4 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.44-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/></svg>
-        تواصل عبر واتساب
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo" aria-label="Nova Verse Academy — الصفحة الرئيسية">
+        <img src="assets/images/logo-mark.svg" alt="" class="logo__mark" width="42" height="42">
+        <span class="logo__text">NOVA VERSE<span>ACADEMY</span></span>
       </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="التنقل الرئيسي">
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">من نحن</a>
+        <a href="index.html#courses">البرامج التعليمية</a>
+        <a href="become-instructor.html">انضم كمدرب</a>
+        <a href="contact.html">تواصل معنا</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="تبديل نمط الألوان">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <path
+              d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+            <circle cx="12" cy="12" r="4.5" />
+          </svg>
+        </button>
+        <a href="#trial" class="btn btn-primary btn-sm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="3" />
+            <path d="M8 2v4M16 2v4M3 10h18" />
+            <path d="m9 15 2 2 4-4" />
+          </svg><span class="btn-full-label">احجز حصة مجانية</span></a>
+        <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+        </button>
+      </div>
     </div>
-  </section>
+  </header>
 
-</main>
+  <main id="main-content">
 
-<!-- ==================== FOOTER ==================== -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="logo" aria-label="Nova Verse Academy">
-          <img src="assets/images/logo-mark.svg" alt="" class="logo__mark" width="42" height="42">
-          <span class="logo__text">NOVA VERSE<span>ACADEMY</span></span>
-        </a>
-        <p>أكاديمية أونلاين متخصصة في تعليم الأطفال البرمجة والذكاء الاصطناعي بأسلوب تفاعلي واحترافي.</p>
-        <div class="social-list">
-          <a href="#" class="social-link" aria-label="فيسبوك (قريبًا)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 9H16V6h-2.5C11.6 6 10 7.6 10 9.9V11H8v3h2v7h3v-7h2.2l.5-3H13v-.9c0-.6.4-1.1 1-1.1Z"/></svg><span class="social-soon">قريبًا</span></a>
-          <a href="#" class="social-link" aria-label="إنستغرام (قريبًا)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg><span class="social-soon">قريبًا</span></a>
-          <a href="#" class="social-link" aria-label="لينكدإن (قريبًا)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9Z"/></svg><span class="social-soon">قريبًا</span></a>
-          <a href="#" class="social-link" aria-label="تيك توك (قريبًا)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 3h2.3c.2 1.5 1.2 2.7 2.7 3v2.3c-1.4 0-2.7-.4-3.7-1.2v6.4a5 5 0 1 1-4-4.9v2.4a2.6 2.6 0 1 0 2 2.5V3Z"/></svg><span class="social-soon">قريبًا</span></a>
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">أكاديمية برمجة أونلاين للأطفال</p>
+          <h1 class="hero-title">مستقبل طفلك <span class="text-gradient">يبدأ من هنا</span></h1>
+          <p class="hero-sub">تعلم البرمجة والذكاء الاصطناعي من خلال حصص أونلاين تفاعلية مصممة للأطفال، بإشراف مدربين
+            متخصصين ومتابعة مستمرة لمستوى كل طفل.</p>
+          <div class="hero-actions">
+            <a href="#trial" class="btn btn-primary">احجز الحصة المجانية</a>
+            <a href="#" data-whatsapp class="btn btn-whatsapp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.13L2 22l5.13-1.51a9.87 9.87 0 0 0 4.9 1.31h.01c5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.9-9.91-9.9zm0 18.03h-.01a8.17 8.17 0 0 1-4.17-1.14l-.3-.18-3.05.9.9-2.98-.19-.31a8.09 8.09 0 0 1-1.25-4.4c0-4.5 3.66-8.16 8.16-8.16 2.18 0 4.22.85 5.77 2.4a8.1 8.1 0 0 1 2.39 5.77c0 4.5-3.7 8.1-8.25 8.1zm4.47-6.11c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.78.95-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.35-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31s-.86.84-.86 2.04.88 2.37 1 2.53c.12.16 1.74 2.65 4.21 3.72.59.25 1.05.4 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.44-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z" />
+              </svg>
+              تواصل عبر واتساب
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat"><strong>100</strong><span>طالب مسجل</span></div>
+            <div class="hero-stat"><strong>1:1 &amp; مجموعات</strong><span>أنماط تعلم مرنة</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-orbit-ring" aria-hidden="true"></div>
+          <img src="assets/images/hero-illustration.svg" alt="طفل يستخدم حاسوبًا محمولًا مع شفرة برمجية عائمة وكواكب"
+            class="hero-illustration" width="520" height="520">
         </div>
       </div>
 
-      <div class="footer-col">
-        <h4>روابط سريعة</h4>
-        <ul>
-          <li><a href="index.html">الرئيسية</a></li>
-          <li><a href="about.html">من نحن</a></li>
-          <li><a href="index.html#courses">البرامج التعليمية</a></li>
-          <li><a href="become-instructor.html">انضم كمدرب</a></li>
-        </ul>
+      <div class="scroll-cue" aria-hidden="true">
+        <span>مرر للأسفل</span>
+        <span class="mouse"></span>
+      </div>
+    </section>
+
+    <!-- ==================== TRUST ==================== -->
+    <section class="section" id="trust">
+      <div class="container section-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow">لماذا Nova Verse؟</p>
+          <h2 class="section-title">لماذا يختار الآباء <span class="text-gradient">Nova Verse Academy</span>؟</h2>
+          <p class="section-desc">نجمع بين خبرة تعليمية حقيقية وتجربة رقمية مصممة خصيصًا لتناسب احتياجات كل طفل.</p>
+        </div>
+
+        <div class="trust-grid reveal-stagger">
+          <article class="card trust-card">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2 3 14h8l-1 8 10-12h-8l1-8Z" />
+              </svg></div>
+            <h3>تعليم تفاعلي</h3>
+            <p>حصص مباشرة قائمة على المشاركة الفعلية، لا مجرد مشاهدة سلبية للشرح.</p>
+          </article>
+          <article class="card trust-card">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7" />
+                <path d="m15 8 2 2 3-3" />
+              </svg></div>
+            <h3>مدربون متخصصون</h3>
+            <p>فريق تدريب مؤهل في البرمجة والتعامل مع الأطفال بأسلوب محفّز وصبور.</p>
+          </article>
+          <article class="card trust-card">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="8" cy="8" r="3" />
+                <circle cx="17" cy="9" r="2.5" />
+                <path d="M3 20c0-3 2.5-5 5-5s5 2 5 5" />
+                <path d="M14.5 20c.3-2.2 1.8-3.8 3.5-4" />
+              </svg></div>
+            <h3>مجموعات صغيرة</h3>
+            <p>عدد محدود من الطلاب في كل مجموعة لضمان اهتمام حقيقي بكل طفل.</p>
+          </article>
+          <article class="card trust-card">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 17V9M9 17V5M15 17v-7M21 17V3" />
+              </svg></div>
+            <h3>متابعة مستمرة</h3>
+            <p>تقارير دورية لأولياء الأمور حول تقدم الطفل ومستوى إتقانه للمهارات.</p>
+          </article>
+          <article class="card trust-card">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="7" width="18" height="13" rx="2" />
+                <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18" />
+              </svg></div>
+            <h3>تعلم بالمشاريع</h3>
+            <p>كل مسار ينتهي بمشروع حقيقي يبنيه الطفل بنفسه ويفخر بعرضه.</p>
+          </article>
+          <article class="card trust-card">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="m5 3 1.5 3L10 7.5 6.5 9 5 12 3.5 9 0 7.5 3.5 6 5 3Z" transform="translate(3 3)" />
+                <path d="M19 13v6M16 16h6" />
+              </svg></div>
+            <h3>حصة مجانية للتجربة</h3>
+            <p>جرّب قبل الاشتراك — حصة تعريفية مجانية لتقييم مدى ملاءمة المسار لطفلك.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== COURSES ==================== -->
+    <section class="section" id="courses">
+      <div class="container section-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow">المسارات التعليمية</p>
+          <h2 class="section-title">برامجنا <span class="text-gradient">التعليمية</span></h2>
+          <p class="section-desc">أربعة مسارات تعليمية متكاملة، مدة كل برنامج سنة دراسية واحدة، بدون أي شروط عمرية —
+            مناسب لكل طفل يريد أن يبدأ.</p>
+        </div>
+
+        <div class="courses-grid reveal-stagger">
+          <article class="card course-card">
+            <div class="course-card__top">
+              <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="12" rx="2" />
+                  <path d="M8 20h8M12 16v4" />
+                  <circle cx="9" cy="10" r="1.2" fill="currentColor" stroke="none" />
+                  <circle cx="15" cy="10" r="1.2" fill="currentColor" stroke="none" />
+                </svg></div>
+              <span class="duration-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 3" />
+                </svg>سنة دراسية واحدة</span>
+            </div>
+            <h3>Scratch</h3>
+            <p>تعلم أساسيات البرمجة والمنطق بطريقة ممتعة وتفاعلية.</p>
+            <a href="#trial" class="btn btn-secondary btn-sm">احجز حصة تجريبية</a>
+          </article>
+
+          <article class="card course-card">
+            <div class="course-card__top">
+              <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m8 9-4 3 4 3M16 9l4 3-4 3M13 6l-2 12" />
+                </svg></div>
+              <span class="duration-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 3" />
+                </svg>سنة دراسية واحدة</span>
+            </div>
+            <h3>Python</h3>
+            <p>تعلم البرمجة الحقيقية وبناء المشاريع.</p>
+            <a href="#trial" class="btn btn-secondary btn-sm">احجز حصة تجريبية</a>
+          </article>
+
+          <article class="card course-card">
+            <div class="course-card__top">
+              <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="7" y="7" width="10" height="10" rx="2" />
+                  <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2 2M17.5 17.5l2 2M19.5 4.5l-2 2M6.5 17.5l-2 2" />
+                </svg></div>
+              <span class="duration-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 3" />
+                </svg>سنة دراسية واحدة</span>
+            </div>
+            <h3>Artificial Intelligence</h3>
+            <p>مقدمة في الذكاء الاصطناعي وتطبيقاته العملية.</p>
+            <a href="#trial" class="btn btn-secondary btn-sm">احجز حصة تجريبية</a>
+          </article>
+
+          <article class="card course-card">
+            <div class="course-card__top">
+              <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 6h16M4 6v12h16V6M4 6l8 6 8-6" />
+                </svg></div>
+              <span class="duration-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 3" />
+                </svg>سنة دراسية واحدة</span>
+            </div>
+            <h3>Web Development</h3>
+            <p>تعلم بناء مواقع الويب من الصفر باستخدام HTML وCSS وJavaScript.</p>
+            <a href="#trial" class="btn btn-secondary btn-sm">احجز حصة تجريبية</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LEARNING JOURNEY ==================== -->
+    <section class="section" id="journey">
+      <div class="container section-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow">خطوة بخطوة</p>
+          <h2 class="section-title">كيف تبدأ <span class="text-gradient">رحلة التعلم؟</span></h2>
+        </div>
+
+        <div class="timeline reveal-stagger">
+          <div class="timeline-connector" aria-hidden="true">
+            <svg viewBox="0 0 1000 40" preserveAspectRatio="none">
+              <path d="M0 20 Q 250 0 500 20 T 1000 20" fill="none" stroke="rgba(255,255,255,0.12)"
+                stroke-dasharray="3 8" />
+            </svg>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-number">1</div>
+            <h3>احجز حصة مجانية</h3>
+            <p>حدد الموعد المناسب لك عبر واتساب خلال دقائق.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-number">2</div>
+            <h3>تعرف على المدرب</h3>
+            <p>جلسة تعارف قصيرة لفهم مستوى واهتمامات طفلك.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-number">3</div>
+            <h3>ابدأ التعلم</h3>
+            <p>ينطلق طفلك في مساره التعليمي بخطى مدروسة ومتدرجة.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-number">4</div>
+            <h3>اكتسب مهارات حقيقية</h3>
+            <p>مشاريع فعلية ومهارات برمجية يستخدمها طفلك بثقة.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TEACHING MODES ==================== -->
+    <section class="section" id="modes">
+      <div class="container section-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow">مرونة في التعلم</p>
+          <h2 class="section-title">طرق <span class="text-gradient">التعلم</span></h2>
+        </div>
+
+        <div class="modes-grid reveal-stagger">
+          <article class="card mode-card">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="8" cy="8" r="3" />
+                <circle cx="17" cy="9" r="2.5" />
+                <path d="M3 20c0-3 2.5-5 5-5s5 2 5 5" />
+                <path d="M14.5 20c.3-2.2 1.8-3.8 3.5-4" />
+              </svg></div>
+            <h3>حصص جماعية <span class="pill">Group Classes</span></h3>
+            <p>تعلم ضمن مجموعة صغيرة من الأطفال في نفس العمر، مع أجواء تحفيزية وتفاعل اجتماعي.</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="m5 12 5 5L20 7" />
+                </svg> تفاعل مع أقران في نفس المستوى</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="m5 12 5 5L20 7" />
+                </svg> أجواء تنافسية محفزة</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="m5 12 5 5L20 7" />
+                </svg> تكلفة أنسب للأسرة</li>
+            </ul>
+          </article>
+
+          <article class="card mode-card">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7" />
+              </svg></div>
+            <h3>حصص فردية <span class="pill">1-on-1</span></h3>
+            <p>خطة تعليمية مخصصة بالكامل لطفلك مع تركيز فردي كامل من المدرب.</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="m5 12 5 5L20 7" />
+                </svg> اهتمام فردي كامل</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="m5 12 5 5L20 7" />
+                </svg> وتيرة تعلم مرنة حسب الطفل</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="m5 12 5 5L20 7" />
+                </svg> مواعيد أكثر مرونة</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FREE TRIAL ==================== -->
+    <section class="section" id="trial">
+      <div class="container">
+        <div class="trial-section reveal">
+          <div class="trial-content">
+            <p class="eyebrow">جربها الآن</p>
+            <h2>احجز أول حصة مجانية <span class="text-gradient">لطفلك</span></h2>
+            <p>دع طفلك يجرب تجربة تعليمية ممتعة قبل الاشتراك، بدون أي التزام.</p>
+            <a href="#" data-whatsapp data-whatsapp-message="مرحبًا، أرغب في حجز حصة تجريبية مجانية لطفلي."
+              class="btn btn-primary">ابدأ الآن</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="section" id="testimonials">
+      <div class="container section-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow">أصوات عملائنا</p>
+          <h2 class="section-title">آراء <span class="text-gradient">أولياء الأمور</span></h2>
+        </div>
+        <div class="testimonial-placeholder reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M7 8h4v5c0 2-1.5 3.5-3.5 4M13 8h4v5c0 2-1.5 3.5-3.5 4" />
+          </svg>
+          <p>سيتم إضافة آراء أولياء الأمور قريبًا.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PRICING CTA ==================== -->
+    <section class="section" id="pricing">
+      <div class="container section-inner pricing-cta reveal">
+        <h2 class="section-title">هل تحتاج تفاصيل عن <span class="text-gradient">الأسعار؟</span></h2>
+        <p>تواصل معنا لمعرفة البرامج التعليمية المناسبة لطفلك.</p>
+        <a href="#" data-whatsapp data-whatsapp-message="مرحبًا، أرغب في معرفة تفاصيل البرامج والأسعار المناسبة لطفلي."
+          class="btn btn-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.13L2 22l5.13-1.51a9.87 9.87 0 0 0 4.9 1.31h.01c5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.9-9.91-9.9zm0 18.03h-.01a8.17 8.17 0 0 1-4.17-1.14l-.3-.18-3.05.9.9-2.98-.19-.31a8.09 8.09 0 0 1-1.25-4.4c0-4.5 3.66-8.16 8.16-8.16 2.18 0 4.22.85 5.77 2.4a8.1 8.1 0 0 1 2.39 5.77c0 4.5-3.7 8.1-8.25 8.1zm4.47-6.11c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.78.95-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.35-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31s-.86.84-.86 2.04.88 2.37 1 2.53c.12.16 1.74 2.65 4.21 3.72.59.25 1.05.4 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.44-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z" />
+          </svg>
+          تواصل عبر واتساب
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Nova Verse Academy">
+            <img src="assets/images/logo-mark.svg" alt="" class="logo__mark" width="42" height="42">
+            <span class="logo__text">NOVA VERSE<span>ACADEMY</span></span>
+          </a>
+          <p>أكاديمية أونلاين متخصصة في تعليم الأطفال البرمجة والذكاء الاصطناعي بأسلوب تفاعلي واحترافي.</p>
+          <div class="social-list">
+            <a href="#" class="social-link" aria-label="فيسبوك (قريبًا)"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13.5 9H16V6h-2.5C11.6 6 10 7.6 10 9.9V11H8v3h2v7h3v-7h2.2l.5-3H13v-.9c0-.6.4-1.1 1-1.1Z" />
+              </svg><span class="social-soon">قريبًا</span></a>
+            <a href="#" class="social-link" aria-label="إنستغرام (قريبًا)"><svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.2" cy="6.8" r="1" />
+              </svg><span class="social-soon">قريبًا</span></a>
+            <a href="#" class="social-link" aria-label="لينكدإن (قريبًا)"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M4.98 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9Z" />
+              </svg><span class="social-soon">قريبًا</span></a>
+            <a href="#" class="social-link" aria-label="تيك توك (قريبًا)"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M14 3h2.3c.2 1.5 1.2 2.7 2.7 3v2.3c-1.4 0-2.7-.4-3.7-1.2v6.4a5 5 0 1 1-4-4.9v2.4a2.6 2.6 0 1 0 2 2.5V3Z" />
+              </svg><span class="social-soon">قريبًا</span></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="index.html#courses">البرامج التعليمية</a></li>
+            <li><a href="become-instructor.html">انضم كمدرب</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>تواصل معنا</h4>
+          <ul>
+            <li><a href="#" data-whatsapp>واتساب</a></li>
+            <li>
+              <p>info@novaverseacademy.com</p>
+            </li>
+            <li><a href="contact.html">صفحة التواصل</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>الشركة</h4>
+          <ul>
+            <li><a href="about.html">رسالتنا ورؤيتنا</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-col">
-        <h4>تواصل معنا</h4>
-        <ul>
-          <li><a href="#" data-whatsapp>واتساب</a></li>
-          <li><p>info@novaverseacademy.com</p></li>
-          <li><a href="contact.html">صفحة التواصل</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>الشركة</h4>
-        <ul>
-          <li><a href="about.html">رسالتنا ورؤيتنا</a></li>
-          <li><a href="contact.html">اتصل بنا</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <p>© 2026 Nova Verse Academy. جميع الحقوق محفوظة.</p>
+        <p>Explore. Code. Create.</p>
       </div>
     </div>
+  </footer>
 
-    <div class="footer-bottom">
-      <p>© 2026 Nova Verse Academy. جميع الحقوق محفوظة.</p>
-      <p>Explore. Code. Create.</p>
-    </div>
-  </div>
-</footer>
+  <a href="#" data-whatsapp class="whatsapp-float" aria-label="تواصل عبر واتساب">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path
+        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.13L2 22l5.13-1.51a9.87 9.87 0 0 0 4.9 1.31h.01c5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.9-9.91-9.9zm0 18.03h-.01a8.17 8.17 0 0 1-4.17-1.14l-.3-.18-3.05.9.9-2.98-.19-.31a8.09 8.09 0 0 1-1.25-4.4c0-4.5 3.66-8.16 8.16-8.16 2.18 0 4.22.85 5.77 2.4a8.1 8.1 0 0 1 2.39 5.77c0 4.5-3.7 8.1-8.25 8.1zm4.47-6.11c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.78.95-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.35-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31s-.86.84-.86 2.04.88 2.37 1 2.53c.12.16 1.74 2.65 4.21 3.72.59.25 1.05.4 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.44-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z" />
+    </svg>
+  </a>
 
-<a href="#" data-whatsapp class="whatsapp-float" aria-label="تواصل عبر واتساب">
-  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.13L2 22l5.13-1.51a9.87 9.87 0 0 0 4.9 1.31h.01c5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.9-9.91-9.9zm0 18.03h-.01a8.17 8.17 0 0 1-4.17-1.14l-.3-.18-3.05.9.9-2.98-.19-.31a8.09 8.09 0 0 1-1.25-4.4c0-4.5 3.66-8.16 8.16-8.16 2.18 0 4.22.85 5.77 2.4a8.1 8.1 0 0 1 2.39 5.77c0 4.5-3.7 8.1-8.25 8.1zm4.47-6.11c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.78.95-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.35-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31s-.86.84-.86 2.04.88 2.37 1 2.53c.12.16 1.74 2.65 4.21 3.72.59.25 1.05.4 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.44-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/></svg>
-</a>
-
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
