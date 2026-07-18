@@ -9,7 +9,7 @@
   /* ---------------------------------------------------------------------
      Config — replace with real values before launch
   --------------------------------------------------------------------- */
-  const WHATSAPP_NUMBER = "201000000000"; // placeholder, no leading 00 or +
+  const WHATSAPP_NUMBER = "201501190654"; // placeholder, no leading 00 or +
   const WHATSAPP_DEFAULT_MESSAGE = "مرحبًا، أرغب في حجز حصة تجريبية مجانية لطفلي في Nova Verse Academy.";
 
   function buildWhatsAppLink(message) {
