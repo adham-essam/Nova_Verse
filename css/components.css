@@ -99,8 +99,8 @@
 .trust-card h3 { font-size: var(--fs-h3); }
 .trust-card p { color: var(--text-secondary); font-size: 0.96rem; }
 
-/* ---- Age badge ---- */
-.age-badge {
+/* ---- Duration badge ---- */
+.duration-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -112,11 +112,12 @@
   padding: 0.35rem 0.9rem;
   border-radius: var(--radius-full);
 }
+.duration-badge svg { width: 14px; height: 14px; }
 
 /* ---- Course cards ---- */
 .courses-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-md);
 }
 .course-card {
