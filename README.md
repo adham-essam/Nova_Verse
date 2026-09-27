@@ -33,14 +33,18 @@ The complete path contains **48 sessions**, with a **final project at the end of
 
 Scratch is the primary visual-programming platform used in the public positioning of Level 1.
 
+Level 1 progress evidence includes **Progress Reports after Sessions 4 and 8**, followed by a **Parent Showcase in Session 12** instead of a separate end-of-level report.
+
 ---
 
 ## Learning Formats
 
 The website currently presents two learning options:
 
-- **Group Classes** — learning with a small group in an interactive, structured environment.
+- **Group Classes** — learning in a small group of no more than **4 students**, within an interactive, structured environment.
 - **1-on-1 Classes** — individual sessions with more personalized attention and learning pace flexibility.
+
+Sessions are delivered **live through Google Meet**, recorded, and shared with parents for later review.
 
 Each option has its own WhatsApp CTA and pre-filled message so parents can start the relevant conversation directly.
 
@@ -69,10 +73,12 @@ The live FAQ currently covers:
 - Whether previous programming experience is required.
 - Whether the student needs a laptop or computer.
 - Arabic vs English usage during lessons.
-- Tasks and practice between sessions.
-- The difference between Group and 1-on-1 learning.
+- Weekly Missions and practice between sessions.
+- Progress Reports after Sessions 4 and 8 and the Session 12 Parent Showcase.
+- Live delivery through Google Meet and access to recorded sessions.
+- The difference between Group Classes, with a maximum of 4 students, and 1-on-1 learning.
 
-Unconfirmed operational details such as exact pricing, exact group size, make-up-session policy, and scheduling rules should **not** be published until finalized.
+The following operational details are confirmed but intentionally kept within the WhatsApp and sales conversation rather than the public website: the 60-minute weekly schedule, the Windows and Scratch Desktop requirement, exact pricing and payment details, and make-up/refund policies. The public FAQ states only that a laptop or computer is required; the sales team must confirm Windows and Scratch Desktop compatibility before enrollment.
 
 ---
 
@@ -259,7 +265,10 @@ When updating the website, keep the following product decisions consistent:
 - Do **not** publish a fixed age restriction in the public marketing copy unless the academy strategy changes.
 - Do **not** add a free-trial CTA.
 - Do **not** add pricing until pricing is finalized for publication.
-- Do **not** publish exact group sizes, scheduling rules, or make-up policies unless officially confirmed.
+- Keep the public Group Classes limit at a maximum of **4 students**.
+- Keep the public statement that sessions are delivered **live through Google Meet**, recorded, and shared with parents.
+- Keep the exact 60-minute weekly schedule and the Windows/Scratch Desktop requirement within the sales conversation.
+- Do **not** publish make-up or refund policies unless the publication decision changes.
 - Do **not** add fake testimonials.
 - Keep **WhatsApp as the primary enrollment conversion path**.
 - Keep Level 1 focused publicly on **computer fundamentals + logical thinking + algorithms + Scratch**.
