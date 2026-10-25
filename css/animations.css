@@ -28,8 +28,10 @@
   50% { box-shadow: 0 0 0 10px transparent; }
 }
 
-/* ---- Scroll reveal ---- */
-.reveal {
+/* ---- Scroll reveal: visible content is the default without JavaScript. ---- */
+.reveal { transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out); }
+.reveal-stagger > * { transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out); }
+.reveal.reveal-pending {
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
@@ -38,7 +40,7 @@
   opacity: 1;
   transform: translateY(0);
 }
-.reveal-stagger > * {
+.reveal-stagger.reveal-pending > * {
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
@@ -55,7 +57,7 @@
 .reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 0.5s; }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal, .reveal-stagger > * {
+  .reveal.reveal-pending, .reveal-stagger.reveal-pending > * {
     opacity: 1;
     transform: none;
     transition: none;

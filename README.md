@@ -4,7 +4,7 @@ Official marketing website for **Nova Verse Academy** — an online programming 
 
 **Brand slogan:** `Explore. Code. Create.`
 
-**Live site:** https://nova-verse-nine.vercel.app/
+**Live site:** https://www.novaverseacademy.com/
 
 ---
 
@@ -84,7 +84,7 @@ The following operational details are confirmed but intentionally kept within th
 
 ## WhatsApp Integration
 
-WhatsApp links are generated in:
+WhatsApp links are present directly in HTML for a working no-JavaScript fallback, and enhanced/tracked in:
 
 ```text
 /js/main.js
@@ -140,12 +140,10 @@ The main website is **Arabic-first** and fully supports RTL layout.
 An English homepage is available at:
 
 ```text
-/en/index.html
+/en/
 ```
 
-The language switch in the header links between the Arabic and English homepages.
-
-> Note: the English version currently covers the homepage. The other supporting pages are still primarily Arabic.
+The homepage, About and Contact pages are available in Arabic and English. Language switches link to the equivalent page.
 
 ---
 
@@ -156,7 +154,13 @@ index.html                Arabic homepage
 about.html                About Nova Verse
 contact.html              Contact page
 become-instructor.html    Instructor application page
-en/index.html             English homepage
+en/index.html             English homepage (canonical /en/)
+en/about.html             English About page
+en/contact.html           English Contact page
+404.html                  Custom error page
+robots.txt                Crawl policy and sitemap discovery
+sitemap.xml               Canonical public pages and language alternatives
+vercel.json               Production redirects and response headers
 ```
 
 ### About Page
@@ -352,3 +356,8 @@ The site is actively being refined. Current priorities are:
 
 **Nova Verse Academy**  
 **Explore. Code. Create.**
+
+
+## SEO
+
+See [docs/SEO.md](docs/SEO.md) for the canonical URL map, implemented controls, account setup checklist, verification commands and maintenance rules. Run `python scripts/check-seo.py` before publishing SEO changes.
