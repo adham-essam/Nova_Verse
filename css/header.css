@@ -35,14 +35,17 @@
   display: flex;
   align-items: center;
   gap: 0.7rem;
+  isolation: isolate;
 }
 .logo__mark {
   width: 48px;
   height: 48px;
   flex-shrink: 0;
   object-fit: contain;
-  -webkit-mask-image: radial-gradient(circle, #000 48%, rgba(0, 0, 0, 0.78) 62%, rgba(0, 0, 0, 0.28) 78%, transparent 96%);
-  mask-image: radial-gradient(circle, #000 48%, rgba(0, 0, 0, 0.78) 62%, rgba(0, 0, 0, 0.28) 78%, transparent 96%);
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 10px rgba(45, 111, 255, 0.24));
+  -webkit-mask-image: radial-gradient(circle, #000 52%, rgba(0, 0, 0, 0.9) 62%, rgba(0, 0, 0, 0.52) 74%, rgba(0, 0, 0, 0.16) 85%, transparent 96%);
+  mask-image: radial-gradient(circle, #000 52%, rgba(0, 0, 0, 0.9) 62%, rgba(0, 0, 0, 0.52) 74%, rgba(0, 0, 0, 0.16) 85%, transparent 96%);
 }
 .logo__text {
   font-weight: 800;
