@@ -42,6 +42,7 @@ The four levels remain Explorer, Builder, Creator and Innovator. Do not publish 
 Run from the repository root:
 
 ```bash
+python scripts/build-css.py --check
 python scripts/check-seo.py
 node --check js/main.js
 node --check api/instructor-application.mjs
@@ -87,3 +88,14 @@ Primary references:
 - https://developers.google.com/search/docs/appearance/structured-data/sd-policies
 - https://developers.google.com/search/docs/crawling-indexing/block-indexing
 - https://vercel.com/docs/project-configuration/vercel-json
+
+
+## Production review on 2026-10-25
+
+- Initial production deployment completed, and all six canonical pages, robots, sitemap and sharing assets returned HTTP 200. Alias redirects returned 308; the custom missing-page URL returned 404. Recruitment and API responses carried the intended noindex headers.
+- The first live review caught a legacy-root exception; an explicit host-conditional root redirect was added alongside the path-preserving redirect.
+- HTML semantics, Unicode normalization and heading order were corrected using the external Nu HTML checker. All six public pages passed without messages before the performance pass.
+- Initial PageSpeed mobile lab run: Performance 79, Accessibility 90, Best Practices 100, SEO 100, LCP 4.2 s, CLS 0. This is a baseline, not the final performance result.
+- The measured render-blocking requests prompted a deterministic CSS bundle and self-hosting of the exact Cairo variable font, including its OFL license. Run `python scripts/build-css.py` after editing a source stylesheet; commit the updated bundle and HTML versions. The `--check` mode verifies consistency without writes.
+- Pagination dots retain their appearance with 32-pixel pointer targets.
+- The unauthenticated PageSpeed API returned 429, but the official PageSpeed web interface ran successfully. Google Rich Results Test requested sign-in; live Google eligibility validation still needs authenticated access.
