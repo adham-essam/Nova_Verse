@@ -19,4 +19,4 @@
 .group-dots{display:grid;grid-template-columns:repeat(2,7px);grid-template-rows:repeat(2,7px);gap:5px;place-content:center}.group-dots i{display:block;width:7px;height:7px;border:1.5px solid currentColor;border-radius:50%;box-shadow:0 0 8px rgba(255,255,255,.2)}
 
 /* The adjacent brand name labels this decorative emblem. */
-.hero-brand-mark{display:block;background:center/contain no-repeat url("../assets/images/logo-primary.webp")}
+.hero-brand-mark{display:block;background:center/contain no-repeat url("../assets/images/logo-primary.webp");-webkit-mask-image:radial-gradient(circle,#000 58%,rgba(0,0,0,.92) 68%,transparent 98%);mask-image:radial-gradient(circle,#000 58%,rgba(0,0,0,.92) 68%,transparent 98%)}
