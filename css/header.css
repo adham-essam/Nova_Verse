@@ -41,8 +41,8 @@
   height: 48px;
   flex-shrink: 0;
   object-fit: contain;
-  -webkit-mask-image: radial-gradient(circle, #000 58%, rgba(0, 0, 0, 0.92) 68%, transparent 98%);
-  mask-image: radial-gradient(circle, #000 58%, rgba(0, 0, 0, 0.92) 68%, transparent 98%);
+  -webkit-mask-image: radial-gradient(circle, #000 48%, rgba(0, 0, 0, 0.78) 62%, rgba(0, 0, 0, 0.28) 78%, transparent 96%);
+  mask-image: radial-gradient(circle, #000 48%, rgba(0, 0, 0, 0.78) 62%, rgba(0, 0, 0, 0.28) 78%, transparent 96%);
 }
 .logo__text {
   font-weight: 800;

@@ -311,8 +311,8 @@ select:focus-visible {
   height: 48px;
   flex-shrink: 0;
   object-fit: contain;
-  -webkit-mask-image: radial-gradient(circle, #000 58%, rgba(0, 0, 0, 0.92) 68%, transparent 98%);
-  mask-image: radial-gradient(circle, #000 58%, rgba(0, 0, 0, 0.92) 68%, transparent 98%);
+  -webkit-mask-image: radial-gradient(circle, #000 48%, rgba(0, 0, 0, 0.78) 62%, rgba(0, 0, 0, 0.28) 78%, transparent 96%);
+  mask-image: radial-gradient(circle, #000 48%, rgba(0, 0, 0, 0.78) 62%, rgba(0, 0, 0, 0.28) 78%, transparent 96%);
 }
 .logo__text {
   font-weight: 800;
@@ -424,7 +424,7 @@ main { padding-top: var(--header-height); }
 .group-dots{display:grid;grid-template-columns:repeat(2,7px);grid-template-rows:repeat(2,7px);gap:5px;place-content:center}.group-dots i{display:block;width:7px;height:7px;border:1.5px solid currentColor;border-radius:50%;box-shadow:0 0 8px rgba(255,255,255,.2)}
 
 /* The adjacent brand name labels this decorative emblem. */
-.hero-brand-mark{display:block;background:center/contain no-repeat url("../assets/images/logo-primary.webp");-webkit-mask-image:radial-gradient(circle,#000 58%,rgba(0,0,0,.92) 68%,transparent 98%);mask-image:radial-gradient(circle,#000 58%,rgba(0,0,0,.92) 68%,transparent 98%)}
+.hero-brand-mark{display:block;background:center/contain no-repeat url("../assets/images/logo-primary.webp");-webkit-mask-image:radial-gradient(circle,#000 48%,rgba(0,0,0,.78) 62%,rgba(0,0,0,.28) 78%,transparent 96%);mask-image:radial-gradient(circle,#000 48%,rgba(0,0,0,.78) 62%,rgba(0,0,0,.28) 78%,transparent 96%)}
 /* sections.css */
 /* Section-specific layout */
 .starfield{position:fixed;inset:0;z-index:-2;pointer-events:none}.nebula-backdrop{position:absolute;inset:0;background:var(--gradient-nebula);z-index:-1;pointer-events:none}
