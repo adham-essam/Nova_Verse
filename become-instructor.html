@@ -19,11 +19,12 @@
     <link rel="icon" type="image/svg+xml" href="assets/images/logo-mark.svg">
 
     <link rel="preload" href="/assets/fonts/cairo-arabic-748022f50c42.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/css/site.css?v=34eb6495d7a4">
+    <link rel="stylesheet" href="/css/site.css?v=889c0bba2cdd">
   </head>
   <body>
+    <a href="#main-content" class="skip-link">تخطي إلى المحتوى</a>
     <canvas class="starfield" aria-hidden="true"></canvas>
-    <div class="nebula-backdrop"></div>
+    <div class="nebula-backdrop" aria-hidden="true"></div>
     <header class="site-header">
       <div class="container nav-wrap">
         <a href="index.html" class="logo"
@@ -38,11 +39,11 @@
           ><a href="contact.html">تواصل معنا</a>
         </nav>
         <div class="nav-actions">
-          <button class="theme-toggle" type="button">◐</button
-          ><button
+          <button
             class="nav-toggle"
             aria-label="فتح القائمة"
             aria-expanded="false"
+            aria-controls="nav-links"
           >
             <span></span>
           </button>
@@ -134,9 +135,23 @@
                       type="file"
                       id="cv-upload"
                       name="attachment"
-                      accept=".pdf,.doc,.docx"
+                      accept="application/pdf,.pdf"
                       required><span data-file-label>اضغط لاختيار ملف الـCV</span></label
-                  ><small class="form-note">PDF أو Word، بحد أقصى 4 MB.</small>
+                  ><small class="form-note">ملف PDF فقط، بحد أقصى 4 MB.</small>
+                </div>
+                <div class="form-field full consent-field">
+                  <label class="consent-label" for="privacy-consent">
+                    <input
+                      type="checkbox"
+                      id="privacy-consent"
+                      name="privacy_consent"
+                      value="accepted"
+                      required>
+                    <span>
+                      قرأت <a href="/privacy.html#recruitment-data" target="_blank" rel="noopener noreferrer">سياسة خصوصية طلبات التوظيف</a>
+                      وأوافق على معالجة بياناتي لتقييم طلبي.
+                    </span>
+                  </label>
                 </div>
               </div>
               <button
@@ -155,7 +170,7 @@
       <div class="container">
         <div class="footer-bottom">
           <p>© 2026 Nova Verse Academy. جميع الحقوق محفوظة.</p>
-          <p>Explore. Code. Create.</p>
+          <p><a href="/privacy.html">سياسة الخصوصية</a> · <span dir="ltr">Explore. Code. Create.</span></p>
         </div>
       </div>
     </footer>

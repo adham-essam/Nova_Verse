@@ -7,7 +7,7 @@ from collections import Counter
 import json, re, sys, xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 ORIGIN='https://www.novaverseacademy.com'
-PUBLIC={'index.html':'/','en/index.html':'/en/','about.html':'/about.html','en/about.html':'/en/about.html','contact.html':'/contact.html','en/contact.html':'/en/contact.html'}
+PUBLIC={'index.html':'/','en/index.html':'/en/','about.html':'/about.html','en/about.html':'/en/about.html','contact.html':'/contact.html','en/contact.html':'/en/contact.html','privacy.html':'/privacy.html','en/privacy.html':'/en/privacy.html'}
 class Page(HTMLParser):
  def __init__(self,text):
   super().__init__(convert_charrefs=True);self.tags=[];self.feed(text)
