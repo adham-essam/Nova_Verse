@@ -23,7 +23,7 @@ Primary origin: **https://www.novaverseacademy.com**. Last implementation review
 - Content visible by default without JavaScript. Below-fold reveal animation is progressive enhancement.
 - Explicit image dimensions and high fetch priority for the hero illustration.
 - Background canvas pauses in hidden tabs, honors reduced motion and caps star density.
-- Placeholder social icons are informational spans instead of dead `href="#"` links.
+- Only the verified official Facebook profile is linked; unlaunched social platforms remain absent from the interface.
 - Encoding is declared before analytics; public pages have language/direction, viewport and a skip link.
 - Developer docs and check scripts excluded from Vercel deployment using `.vercelignore`.
 
@@ -65,7 +65,7 @@ These are account actions, not changes that can be completed just by shipping HT
 6. Link Search Console with the existing GA4 property under Admin → Product links → Search Console links if the same account has the needed permissions. Confirm the web stream website URL uses the new primary domain. Do not create a duplicate GA4 property or replace measurement ID `G-5CK8XPB7XG`.
 7. In GA4, verify organic acquisition and `whatsapp_click` in Realtime/DebugView; mark the intended event as a key event if desired. A WhatsApp click measures an outbound enquiry attempt, not a completed enrollment.
 8. **Bing Webmaster Tools:** import the verified Search Console property when offered, or verify the domain directly. Submit the same canonical sitemap and inspect the homepage.
-9. Update owned social-profile website fields and ad destinations to the primary domain. No social account URLs were supplied, so no guessed profiles or `sameAs` markup were added.
+9. Keep the verified Facebook profile URL current in the website footer, contact page and Organization `sameAs` markup. Add other platforms only after their official URLs are confirmed.
 
 ## Performance and rich-result validation
 
