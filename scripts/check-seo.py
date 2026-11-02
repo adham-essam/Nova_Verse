@@ -78,7 +78,7 @@ for name,doc in parsed.items():
    check('alt' in a,name+': image alt')
    check('width' in a and 'height' in a,name+': image dimensions')
   if tag=='a' and 'data-whatsapp' in a:
-   check(a.get('href','').startswith('https://wa.me/201501190654?text='),name+': WhatsApp without JS')
+   check(a.get('href','').startswith('https://wa.me/201096674674?text='),name+': WhatsApp without JS')
   target=a.get('src') if tag in ['img','script'] else a.get('href') if tag in ['a','link'] else None
   if not target or target=='#':continue
   url=urlsplit(urljoin(source,target))
