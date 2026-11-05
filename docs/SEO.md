@@ -65,7 +65,7 @@ These are account actions, not changes that can be completed just by shipping HT
 6. Link Search Console with the existing GA4 property under Admin → Product links → Search Console links if the same account has the needed permissions. Confirm the web stream website URL uses the new primary domain. Do not create a duplicate GA4 property or replace measurement ID `G-5CK8XPB7XG`.
 7. In GA4, verify organic acquisition and `whatsapp_click` in Realtime/DebugView; mark the intended event as a key event if desired. A WhatsApp click measures an outbound enquiry attempt, not a completed enrollment.
 8. **Bing Webmaster Tools:** import the verified Search Console property when offered, or verify the domain directly. Submit the same canonical sitemap and inspect the homepage.
-9. Keep the verified Facebook profile URL current in the website footer, contact page and Organization `sameAs` markup. Add other platforms only after their official URLs are confirmed.
+9. Keep the official Facebook, Instagram and TikTok profile URLs current in the website footer, contact page and Organization `sameAs` markup. Add other platforms only after their official URLs are confirmed.
 
 ## Performance and rich-result validation
 
